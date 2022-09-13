@@ -1,0 +1,98 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+:root {
+  --color-light-bg: #f7f7f7;
+  --color-white: #ffff;
+  --color-black: #333;
+  --color-primary: #0c53ec;
+  --transition: 400ms ease;
+}
+button,
+input {
+  background: none;
+  border: none;
+  outline: none;
+}
+.btn {
+  padding: 10px 20px;
+  border: 2px solid var(--color-primary);
+  color: var(--color-primary);
+  font-weight: 700;
+  font-size: 13px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.btn.tab-active {
+  background: var(--color-primary);
+  color: var(--color-white);
+}
+body {
+  background: var(--color-light-bg);
+  display: flex;
+  justify-content: center;
+  color: var(--color-black);
+  padding-top: 50px;
+}
+
+.signup-container {
+  width: 400px;
+  background: var(--color-white);
+  height: 400px;
+}
+.signup-container .header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 1rem;
+}
+.signup-container .header > * {
+  flex: 1 0 auto;
+}
+.signup-container .signup-wrapper {
+  position: relative;
+}
+.signup-container .form {
+  padding: 10px 15px;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(0);
+  transition: 1s;
+}
+.signup-container .form.panel-active {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+}
+
+.signup-container .form .form-group label {
+  display: block;
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+.signup-container .form .form-group .form-control {
+  display: block;
+  width: 100%;
+  padding: 0 10px;
+  height: 40px;
+  border-radius: 15px;
+  border: 2px solid var(--color-primary);
+}
+.signup-container .form .form-group {
+  margin-bottom: 15px;
+}
+.signup-container .form .form-submit {
+  width: 50%;
+  transition: var(--transition);
+}
+.signup-container .form .form-submit:hover {
+  background: var(--color-primary);
+  color: var(--color-white);
+}

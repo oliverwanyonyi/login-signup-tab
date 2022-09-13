@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Login and Signup Tab with Html Css and Javascript</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="signup-container">
+      <div class="header">
+        <button class="btn tab tab-active" data-tab='register'>Register</button>
+        <button class="btn tab" data-tab="login">Login</button>
+      </div>
+      <div class="signup-wrapper">
+        <form class="form panel-register panel-active">
+          <div class="form-group">
+            <label for="name">User Name</label>
+            <input
+              type="text"
+              class="form-control"
+              placeholder="e.g Jane doe"
+              id="name"
+            />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              class="form-control"
+              placeholder="e.g janedoe@gmail.com"
+              id="email"
+            />
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              class="form-control"
+              placeholder="q2a3b4r567"
+              id="password"
+            />
+          </div>
+          <button class="form-submit btn">Register</button>
+        </form>
+         <form class="form panel-login">
+         <div class="form-group">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              class="form-control"
+              placeholder="e.g janedoe@gmail.com"
+              id="email"
+            />
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              class="form-control"
+              placeholder="q2a3b4r567"
+              id="password"
+            />
+            </div>
+          <button class="form-submit btn">Login</button>
+
+        </form> 
+
+      
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
